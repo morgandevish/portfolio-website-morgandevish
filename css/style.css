@@ -68,12 +68,15 @@ a:active {
 .button {
   display: inline-block;
   background-color: #2BA8DA;
-  color: #ffffff !important;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #2283AA;
   transition: 0.2s opacity;
+}
+
+a.button {
+  color: #ffffff;
 }
 
 .button:hover {
