@@ -107,6 +107,10 @@ header {
   background-color: #1F7A9E;
   text-align: center;
   padding: 10px 0;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+  -moz-box-shadow:    0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+  box-shadow:         0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+position: relative;
 }
 
 /* Layout styling */
@@ -160,4 +164,7 @@ color: #1F7A9E;
 
 #hero {
   background-color: #1F7A9E;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
