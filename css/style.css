@@ -11,7 +11,7 @@ Secondary text color (dark grey): #898789;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -51,22 +51,22 @@ img {
 }
 
 a {
-  color: #2BA8DA;
+  color: #fff;
   text-decoration: none;
 }
 
 a:visited {
-  color: #2BA8DA;
+  color: #fff;
 }
 
 a:hover,
 a:focus {
-  color: #1F7A9E;
+  color: #2BA8DA;
   text-decoration: none;
 }
 
 a:active {
-  color: #2283AA;
+  color: #2BA8DA;
 }
 
 .button {
@@ -80,7 +80,7 @@ a:active {
 }
 
 a.button {
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:hover {
@@ -131,6 +131,8 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  display: inline-block;
+  width: 100%;
 }
 
 nav > ul > li {
@@ -144,4 +146,14 @@ nav > ul > li > a {
   color: #fff;
 }
 
+nav > ul > li > a:visited {
+color: #2BA8DA;
+}
+
+nav > ul > li > a:hover {
+color: #1F7A9E;
+}
+
+nav > ul > li > a:active {
+color: #1F7A9E;
 }
