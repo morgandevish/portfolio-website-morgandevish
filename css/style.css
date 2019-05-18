@@ -6,6 +6,9 @@ box shadows: #2283AA;
 Text color (headings): #2F2E2E;
 Secondary text color (dark grey): #898789;
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #ffffff;
@@ -25,6 +28,7 @@ h1, h2, h3, h4 {
 h1 {
   font-weight: 700;
   font-size: 2.75em;
+  text-align: center;
 }
 
 h2 {
@@ -96,5 +100,48 @@ a.button {
 
 .button.contact:hover {
   background-color: #2BA8DA;
-  color: #ffffff !important;
+  color: #fff !important;
+}
+
+header {
+  background-color: #1F7A9E;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
 }
