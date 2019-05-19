@@ -170,6 +170,7 @@ color: #1F7A9E;
   width: 100%;
 }
 
-#socialicons {
+.fab {
   display: inline-block;
+  width: 100%;
 }
