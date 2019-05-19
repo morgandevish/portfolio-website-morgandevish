@@ -51,22 +51,22 @@ img {
 }
 
 a {
-  color: #fff;
+  color: #2BA8DA;
   text-decoration: none;
 }
 
 a:visited {
-  color: #fff;
+  color: #2BA8DA;
 }
 
 a:hover,
 a:focus {
-  color: #2BA8DA;
+  color: #1F7A9E;
   text-decoration: none;
 }
 
 a:active {
-  color: #2BA8DA;
+  color: #1F7A9E;
 }
 
 .button {
@@ -164,7 +164,12 @@ color: #1F7A9E;
 
 #hero {
   background-color: #1F7A9E;
+  color: #fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+#socialicons {
+  display: inline-block;
 }
