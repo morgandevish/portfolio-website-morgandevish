@@ -1,11 +1,12 @@
 /*
 Colors used:
-Primary Color (reef blue): #2BA8DA;
-Secondary color: (darker blue): #1F7A9E;
-box shadows: #2283AA;
+Primary Color (light blue): #D8F0F5;
+Buttons (dark blue): #0C197B;
+box shadows: #081156;
 Text color (headings): #2F2E2E;
 Secondary text color (dark grey): #898789;
 */
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +14,7 @@ Secondary text color (dark grey): #898789;
 body {
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #898789;
   line-height: 1.6;
@@ -51,7 +52,7 @@ img {
 }
 
 a {
-  color: #2BA8DA;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -71,11 +72,11 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #2BA8DA;
+  background-color: #0C197B;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #2283AA;
+  border-bottom: 2px solid #081156;
   transition: 0.2s opacity;
 }
 
@@ -89,31 +90,40 @@ a.button {
 }
 
 .button:active {
-  color: #1F7A9E;
+  color: #0C197B;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #2BA8DA !important;
-  border: 2px solid #2BA8DA;
+  color: #0C197B !important;
+  border: 2px solid #0C197B;
+  transition: 0.2s opacity;
 }
 
 .button.contact:hover {
-  background-color: #2BA8DA;
+  background-color: #0C197B;
   color: #fff !important;
+  opacity: 0.8;
 }
 
 header {
-  background-color: #1F7A9E;
+  background-color: #D8F0F5;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
-  -moz-box-shadow:    0px 5px 6px 0px rgba(69, 87, 96, 0.37);
-  box-shadow:         0px 5px 6px 0px rgba(69, 87, 96, 0.37);
-position: relative;
+  -moz-box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+  box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+  position: relative;
+}
+
+footer {
+  background-color: #D8F0F5;
+    text-align: center;
+    padding: 10px 0;
 }
 
 /* Layout styling */
+
 .container {
   padding: 0 15px;
   max-width: 1200px;
@@ -123,54 +133,159 @@ position: relative;
   margin: 25px 0;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 10px;
+}
+
 #work .row {
   padding-bottom: 25px;
 }
 
 .logo {
-  max-width: 250px;
-  text-align: center;
+  max-width: 50px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   display: inline-block;
   width: 100%;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #0C197B;
+}
+
+nav>ul>li>a:visited {
+  color: #0C197B;
+}
+
+nav>ul>li>a:hover {
   color: #2BA8DA;
 }
 
-nav > ul > li > a:visited {
-color: #2BA8DA;
-}
-
-nav > ul > li > a:hover {
-color: #1F7A9E;
-}
-
-nav > ul > li > a:active {
-color: #1F7A9E;
+nav>ul>li>a:active {
+  color: #2BA8DA;
 }
 
 #hero {
-  background-color: #1F7A9E;
-  color: #fff;
+  background-color: #D8F0F5;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+  text-align: center;
 }
 
-.fab {
-  display: inline-block;
-  width: 100%;
+#hero span {
+  display: block;
+}
+
+#herofitted {
+  padding-top: 35px;
+}
+
+#herograffiti {
+  padding-top: 35px;
+}
+
+#aboutpage h3 {
+  margin-top: 0;
+}
+
+footer .fab {
+  margin: 20px 30px;
+  font-size: 2em;
+  color: #0C197B;
+}
+
+footer .fab:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+.col-4 {
+width: 33.33%;  
+}
+
+.col-5 {
+  width: 41.66%;
+
+}
+.col-6 {
+  width: 50%;
+
+}
+.col-7 {
+  width: 58.33%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 1440px) {
+
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
