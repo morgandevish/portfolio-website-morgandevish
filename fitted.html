@@ -14,7 +14,7 @@
 <body>
   <header>
     <div>
-      <a href="index.html" class="logo"><img src="https://via.placeholder.com/150x50?text=MorganDevish" alt="Morgan Devish"></a>
+      <a href="index.html"><img src="img/logo.svg" alt="Morgan Devish" class="logo"></a>
       <nav>
         <ul class="nav">
           <li><a href="index.html">Work</a></li>
@@ -89,21 +89,29 @@
         <p>
           I started by creating 2 different Moodboards to communicate the visual directions for my web app. Moodboard 2 was chosen due to the vibrant colors and overall energy it presented. The idea is to evoke energy and positivity into the user, and the bright and vibrant colors would be more beneficial in comparison to more subtle colors.
         </p>
+        <div class="row">
+          <div class="col-md-6" "col-lg-7">
           <h3>Moodboard 1</h3>
           <picture>
             <source srcset="img/fitted/moodboard1@1.jpg" media="(max-width:800px)">
             <img src="img/fitted/moodboard1@2.jpg" alt="Moodboard 1">
           </picture>
+            </div>
+            <div class="row">
+              <div class="col-md-6" "col-lg-7">
           <h3>Moodboard 2</h3>
           <picture>
             <source srcset="img/fitted/moodboard2@1.jpg" media="(max-width:767px)">
             <img src="img/fitted/moodboard2@2.jpg" alt="Moodboard 2">
           </picture>
         </div>
+        </div>
       </div>
+    </div>
+  </div>
 
-    <div>
-      <div>
+    <div id="personafitted">
+      <div class="container">
         <h2>Primary User Persona</h2>
         <p>
           <!--Will be creating a better way to display user persona here-->
@@ -141,38 +149,54 @@
     <div id="finalmockups">
       <div class="container">
         <h2>Final Mockups</h2>
+        <div class="row">
+          <div class="col-md-6" "col-lg-7">
             <h3>Landing Page</h3>
             <p>
               The landing page is simple for mobile. It provides a short, clear description of Fitted, and an option to sign up or log in.
             </p>
+          </div>
+          <div "column col-md-4" "col-lg-5">
             <picture>
-              <source srcset="img/fitted/fittedlanding@1.jpg" media="(max-width:300px)">
+              <source srcset="img/fitted/fittedlanding@1.jpg" media="(max-width:200px)">
               <img src="img/fitted/fittedlanding@2.jpg" alt="Fitted Landing Page">
             </picture>
+          </div>
+        </div>
                 <h3>Onboarding</h3>
+                <div class="row">
+                  <div class="col-md-4" "col-lg-5">
                 <picture>
-                  <source srcset="img/fitted/fittedonboarding@1.jpg" media="(max-width:400px)">
+                  <source srcset="img/fitted/fittedonboarding@1.jpg" media="(max-width:200px)">
                   <img src="img/fitted/fittedonboarding@2.jpg" alt="Fitted Onboarding">
                 </picture>
+              </div>
+              <div "column col-md-6" "col-lg-7">
               <p>
                 The onboarding screens ask information from the user about their goals and health data to provide more customized results for their suggested workouts.
               </p>
-            </div>
           </div>
+        </div>
+      </div>
 
             <div id="dailychallenge">
               <div class="container">
                 <h3>Home Screen and Daily Challenge</h3>
+                <div class="row">
+                  <div class="col-md-6" "col-lg-7">
                 <p>
-                  The home screen provides exercise options based on your needs and goals, and keep track of your progress.<span> The daily challenge is just another push to get the user to work out every day, even if only for 5 minutes.
-                  </span>
+                  The home screen provides exercise options based on your needs and goals, and keep track of your progress. The daily challenge is just another push to get the user to work out every day, even if only for 5 minutes.
                 </p>
+              </div>
                   <picture>
-                    <source srcset="img/fitted/fittedhome@1.jpg" media="(max-width:400px)">
+                      <div "column col-md-4" "col-lg-5">
+                    <source srcset="img/fitted/fittedhome@1.jpg" media="(max-width:200px)">
                     <img src="img/fitted/fittedhome@2.jpg" alt="Fitted Home and Daily Challenge">
                   </picture>
                 </div>
+              </div>
             </div>
+          </div>
 
             <div id="beginworkout">
               <div class="container">
@@ -187,19 +211,27 @@
             <div id="fittedprofile">
               <div class="container">
                 <h3>Your Profile</h3>
+                <div class="row">
+                <div class="col-md-6" "col-lg-7">
                 <picture>
                   <source srcset="img/fitted/fittedprofile@1.jpg" media="(max-width:400px)">
                   <img src="img/fitted/fittedprofile@2.jpg" alt="Fitted Profile">
                 </picture>
+              </div>
+              <div class="column col-md-5 col-lg-6">
               <p>
                 Your profile is a place to view all your goals, from your steps per day, workouts, weight loss/gain journey and awards.
               </p>
             </div>
           </div>
+        </div>
+      </div>
 
             <div id="customworkout">
               <div class="container">
                 <h3>Create a Custom Workout</h3>
+                <div class="row">
+                  <div
                 <p>
                   Have a different workout in mind? We have a solution. Create your own custom workout to add to your routine.
                 </p>
