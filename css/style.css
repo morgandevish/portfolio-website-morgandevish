@@ -114,8 +114,7 @@ margin-bottom: 30px;
 
 header {
   background-color: #D8F0F5;
-  text-align: center;
-  padding: 15px 0;
+  padding: 10px 0 4px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
   -moz-box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
   box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
@@ -158,15 +157,12 @@ footer {
   max-width: 50px;
 }
 
+/* Navigation Section */
+
 nav>ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -188,6 +184,41 @@ nav>ul>li>a:active {
   color: #2BA8DA;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #D8F0F5;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+/* Hero Section */
+
 #hero {
   background-color: #D8F0F5;
   padding: 20px 0;
@@ -197,6 +228,7 @@ nav>ul>li>a:active {
 #hero span {
   display: block;
 }
+
 
 /* Fitted Page */
 
@@ -355,6 +387,24 @@ footer .fab:hover {
     float: left;
     padding: 10px;
   }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    min-width: 30px;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -390,6 +440,7 @@ footer .fab:hover {
   .col-lg-8 {
     width: 66.66%;
   }
+
 }
 
 @media only screen and (min-width: 1440px) {}
