@@ -14,15 +14,18 @@
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html"><img src="img/logo.svg" alt="Morgan Devish" class="logo"></a>
       <nav>
         <ul class="nav">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
   </header>
 
   <main>
@@ -210,61 +213,63 @@
 
     <div id="graffitiprofile">
       <div class="container">
-    <h3>Profile</h3>
-    <div class="row">
-      <div class="col-md-6 col-lg-7">
-    <picture>
-      <source srcset="img/graffitihunt/graffitiprofile@1.jpg" media="(max-width:400px)">
-      <img src="img/graffitihunt/graffitiprofile@2.jpg" alt="Graffiti Hunt Profile">
-    </picture>
-  </div>
-  <div class="col-md-6 col-lg-5">
-    <p>
-      Your profile page allows you to view your player stats, saved and created hunts, your friends list and your social posts. You can also begin a hunt from this page.
-    </p>
-  </div>
-</div>
-</div>
-</div>
-
-
-<div id="beginhunt">
-  <div class="container">
-    <h3>Begin Your Hunt</h3>
-    <div class="row">
-  <div class="ccol-md-6 col-lg-7">
-    <p>
-      Beginning your hunt is quick and easy. By clicking the “play” button, you are prompted to the Check In page. <span> Here, you can change your difficulty level, view the points on the map and see your start and end points.
-      </span>
-    </p>
-  </div>
-  <div class="col-md-6 col-lg-5">
-    <picture>
-      <source srcset="img/graffitihunt/graffitibeginhunt@1.jpg" media="(max-width:400px)">
-      <img src="img/graffitihunt/graffitibeginhunt@2.jpg" alt="Graffiti Hunt Begin Your Hunt">
-    </picture>
+        <h3>Profile</h3>
+        <div class="row">
+          <div class="col-md-6 col-lg-7">
+            <picture>
+              <source srcset="img/graffitihunt/graffitiprofile@1.jpg" media="(max-width:400px)">
+              <img src="img/graffitihunt/graffitiprofile@2.jpg" alt="Graffiti Hunt Profile">
+            </picture>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <p>
+              Your profile page allows you to view your player stats, saved and created hunts, your friends list and your social posts. You can also begin a hunt from this page.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+    <div id="beginhunt">
+      <div class="container">
+        <h3>Begin Your Hunt</h3>
+        <div class="row">
+          <div class="ccol-md-6 col-lg-7">
+            <p>
+              Beginning your hunt is quick and easy. By clicking the “play” button, you are prompted to the Check In page. <span> Here, you can change your difficulty level, view the points on the map and see your start and end points.
+              </span>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <picture>
+              <source srcset="img/graffitihunt/graffitibeginhunt@1.jpg" media="(max-width:400px)">
+              <img src="img/graffitihunt/graffitibeginhunt@2.jpg" alt="Graffiti Hunt Begin Your Hunt">
+            </picture>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div id="graffiticonclusion">
-  <div class="container">
-    <h2>Conclusion</h2>
-    <p>
-      With this being my first UX Design project, the main takeaway was that communication with your users is key. Your users may point out a plethora of usability issues that you would have never known if you didn't take the time to listen to each
-      users' feedback and make adjustments. There is so much more to good design than a product that looks appealing at first glance. To build a lasting product, you must always put the user first and never forget who you are making the product for
-      in the first place.
-    </p>
+    <div id="graffiticonclusion">
+      <div class="container">
+        <h2>Conclusion</h2>
+        <p>
+          With this being my first UX Design project, the main takeaway was that communication with your users is key. Your users may point out a plethora of usability issues that you would have never known if you didn't take the time to listen to
+          each
+          users' feedback and make adjustments. There is so much more to good design than a product that looks appealing at first glance. To build a lasting product, you must always put the user first and never forget who you are making the product
+          for
+          in the first place.
+        </p>
 
-    <p>
-      View the prototype on <a href="https://invis.io/34NVO9QA2CR" target="_blank">InVision</a>
-    </p>
-    <p>
-      If you like this project and want to see more, check it out and appreciate on <a href="https://www.behance.net/gallery/74715507/Graffiti-Hunt-UX-Design-Case-Study" target="_blank">Behance</a>
-    </p>
-  </div>
-</div>
+        <p>
+          View the prototype on <a href="https://invis.io/34NVO9QA2CR" target="_blank">InVision</a>
+        </p>
+        <p>
+          If you like this project and want to see more, check it out and appreciate on <a href="https://www.behance.net/gallery/74715507/Graffiti-Hunt-UX-Design-Case-Study" target="_blank">Behance</a>
+        </p>
+      </div>
+    </div>
 
   </main>
 
@@ -289,6 +294,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
