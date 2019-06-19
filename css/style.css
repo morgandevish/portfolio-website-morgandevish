@@ -120,6 +120,10 @@ header {
   position: relative;
 }
 
+.center {
+  text-align: center;
+}
+
 footer {
   background-color: #d8f0f5;
   text-align: center;
@@ -269,6 +273,12 @@ nav > ul > li > a:active {
   display: block;
 }
 
+#myimage {
+  max-width: 800px;
+  display: block;
+  margin: auto;
+}
+
 #skills {
   background-color: #eff5f7;
 }
@@ -381,7 +391,7 @@ footer .fab:hover {
   }
 
   nav > ul {
-    margin: 0.75em 0;
+    margin: 0.5em 0;
   }
 
   nav > ul > li {
@@ -396,6 +406,14 @@ footer .fab:hover {
   .navtoggle li:last-child {
     display: none;
   }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  .navtoggle.responsive li  {
+    padding: 0;
+    border-top: none;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
