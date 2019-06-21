@@ -1,0 +1,454 @@
+/*
+Colors used:
+Primary Color (light blue): #d8f0f5;
+Buttons (dark blue): #0c197b;
+box shadows: #081156;
+Text color (headings): #2f2e2e;
+Secondary text color (dark grey): #898789;
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #898789;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3;
+  color: #2f2e2e;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.75em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.35em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2ba8da;
+}
+
+a:hover,
+a:focus {
+  color: #1f7a9e;
+  text-decoration: none;
+}
+
+a:active {
+  color: #1f7a9e;
+}
+
+.button {
+  display: inline-block;
+  background-color: #0c197b;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #081156;
+  transition: 0.2s opacity;
+}
+
+a.button {
+  color: #fff;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #0c197b;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #0c197b !important;
+  border: 2px solid #0c197b;
+  transition: 0.2s opacity;
+}
+
+.button.contact:hover {
+  background-color: #0c197b;
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+#about .center {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+header {
+  background-color: #d8f0f5;
+  padding: 10px 0 4px;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+  box-shadow: 0px 5px 6px 0px rgba(69, 87, 96, 0.37);
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  background-color: #d8f0f5;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 10px;
+}
+
+#work .row {
+  padding-bottom: 25px;
+}
+
+#mywork h2 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+/* Navigation Section */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0c197b;
+}
+
+nav > ul > li > a:visited {
+  color: #0c197b;
+}
+
+nav > ul > li > a:hover {
+  color: #2ba8da;
+}
+
+nav > ul > li > a:active {
+  color: #2ba8da;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #d8f0f5;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #d8f0f5;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+/* Fitted Page */
+#herofitted {
+  padding-top: 35px;
+  background-color: #d8f0f5;
+}
+
+#fittedheading {
+  text-align: center;
+}
+
+.landing {
+  max-width: 250px;
+  padding: 0 15px;
+}
+
+/* Graffiti Hunt Page */
+#herograffiti {
+  padding-top: 35px;
+  background-color: #d8f0f5;
+}
+
+#graffitihunt {
+  text-align: center;
+}
+
+.graffitiimage {
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* About Page */
+#aboutpage h3 {
+  margin-top: 0;
+}
+
+#about span {
+  display: block;
+}
+
+#myimage {
+  max-width: 800px;
+  display: block;
+  margin: auto;
+}
+
+#skills {
+  background-color: #eff5f7;
+  padding: 0.2em 1em;
+}
+
+/* Footer */
+footer .fab {
+  margin: 20px 30px;
+  font-size: 2em;
+  color: #0c197b;
+}
+
+footer .fab:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0 15px;
+  }
+
+  #mywork h3 {
+    margin-top: 0;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-bottom: 5px;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  nav > ul {
+    margin: 0.5em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    min-width: 30px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  .navtoggle.responsive li  {
+    padding: 0;
+    border-top: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {}
